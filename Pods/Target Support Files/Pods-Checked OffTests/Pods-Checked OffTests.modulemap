@@ -1,0 +1,6 @@
+framework module Pods_Checked_OffTests {
+  umbrella header "Pods-Checked OffTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
