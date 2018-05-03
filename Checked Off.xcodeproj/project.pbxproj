@@ -19,6 +19,7 @@
 		FC64148A208F475F00C205BC /* Checked_OffTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC641489208F475F00C205BC /* Checked_OffTests.swift */; };
 		FC641495208F475F00C205BC /* Checked_OffUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC641494208F475F00C205BC /* Checked_OffUITests.swift */; };
 		FC6414A3208F4FB600C205BC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC6414A2208F4FB600C205BC /* GoogleService-Info.plist */; };
+		FC6414B92093923900C205BC /* Advanced Architecture.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC6414B82093923900C205BC /* Advanced Architecture.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		FC641494208F475F00C205BC /* Checked_OffUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checked_OffUITests.swift; sourceTree = "<group>"; };
 		FC641496208F475F00C205BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC6414A2208F4FB600C205BC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FC6414B82093923900C205BC /* Advanced Architecture.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Advanced Architecture.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 				FC641480208F475F00C205BC /* Info.plist */,
 				FC641478208F475D00C205BC /* Checked_Off.xcdatamodeld */,
 				FC6414A2208F4FB600C205BC /* GoogleService-Info.plist */,
+				FC6414B82093923900C205BC /* Advanced Architecture.ttf */,
 			);
 			path = "Checked Off";
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 			files = (
 				FC64147F208F475F00C205BC /* LaunchScreen.storyboard in Resources */,
 				FC6414A3208F4FB600C205BC /* GoogleService-Info.plist in Resources */,
+				FC6414B92093923900C205BC /* Advanced Architecture.ttf in Resources */,
 				FC64147C208F475F00C205BC /* Assets.xcassets in Resources */,
 				FC641477208F475D00C205BC /* Main.storyboard in Resources */,
 			);
@@ -563,7 +567,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9LJ8MG8CN5;
 				INFOPLIST_FILE = "Checked Off/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Checked-Off";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -579,7 +586,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9LJ8MG8CN5;
 				INFOPLIST_FILE = "Checked Off/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Checked-Off";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -596,7 +606,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9LJ8MG8CN5;
 				INFOPLIST_FILE = "Checked OffTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Checked-OffTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -614,7 +628,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9LJ8MG8CN5;
 				INFOPLIST_FILE = "Checked OffTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Checked-OffTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -631,7 +649,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9LJ8MG8CN5;
 				INFOPLIST_FILE = "Checked OffUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Checked-OffUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -648,7 +670,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9LJ8MG8CN5;
 				INFOPLIST_FILE = "Checked OffUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Checked-OffUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
