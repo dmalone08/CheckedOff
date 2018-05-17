@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class ViewController: UIViewController {
     
@@ -35,16 +36,55 @@ class ViewController: UIViewController {
         backgroundImage.layer.mask = gradient
         
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if Auth.auth().currentUser != nil {
+            self.performSegue(withIdentifier: "showItems", sender: nil)
+        }
+    }
 
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
         gradient.frame = backgroundImage.bounds
     }
+    
+    //MARK: Alert function
+    func displayAlert(title: String, message: String) {
+        
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
 
     //MARK: Actions
-    
     @IBAction func greenButtonTapped(_ sender: Any) {
+        if let email = emailTextField.text {
+            if let password = passwordTextField.text {
+                
+                if signUpMode {
+                //Sign In
+                    Auth.auth().createUser(withEmail: email, password: password) { (user, error) in
+                        if error != nil {
+                            self.displayAlert(title: "Error", message: error!.localizedDescription)
+                        } else {
+                            self.performSegue(withIdentifier: "showItems", sender: nil)
+                        }
+                    }
+                    
+                } else {
+                //Log In
+                    Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
+                        if error != nil {
+                            self.displayAlert(title: "Error", message: error!.localizedDescription)
+                        } else {
+                            self.performSegue(withIdentifier: "showItems", sender: nil)
+                        }
+                    }
+                    
+                }
+            }
+        }
     }
     
     @IBAction func messageSideButtonTapped(_ sender: Any) {
