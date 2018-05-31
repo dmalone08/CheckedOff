@@ -9,7 +9,7 @@
 import UIKit
 import FirebaseAuth
 
-class ViewController: UIViewController {
+class LoginScreen: UIViewController {
     
     //MARK: Properties
     @IBOutlet weak var backgroundImage: UIImageView!
